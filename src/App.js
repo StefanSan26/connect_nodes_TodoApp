@@ -14,9 +14,10 @@ function App() {
 				<header className="App-header">
 					<h1>Todo List Challenge</h1>
 				</header>
-
-			<TodoList />
-			<NewTodo/>
+				<main>
+					<TodoList />
+					<NewTodo/>
+				</main>
 			</div>
 
 		</AppContext.Provider>

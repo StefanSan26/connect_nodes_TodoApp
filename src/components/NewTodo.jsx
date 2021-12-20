@@ -20,6 +20,7 @@ const NewTodo = () => {
 		});
 		getData()
 		setNewTodo(!newTodo)
+		setTodoValue('')
 	}
 	return (
 		<>
