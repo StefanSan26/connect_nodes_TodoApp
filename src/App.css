@@ -6,6 +6,13 @@
 button{
 	cursor: pointer;
 }
+input{
+	font-size: large;
+	width: 80%;
+	background: rgba(243, 243, 243, 0.822);
+	border-radius: 5px;
+	border: none;
+}
 .App {
   text-align: center;
 }
@@ -23,31 +30,28 @@ button{
 h2{
 	color: cornsilk;
 }
-main{
+body{
 	background-color: rgb(61, 65, 110);
 	height: 100%;
 	padding-bottom: 100px;
 }
 .Todo, .NewTodo--create{
-	height: 35px;
+	min-height: 30px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	margin: 0 auto;
 	width: 70vw;
 	font-size: large;
-	/* color: cornsilk; */
-	/* line-height: 35px; */
 	padding: 5px;
 	background-color:rgb(211, 216, 224);
-	/* border: cadetblue solid 1px; */
 	border-radius: 5px;
 	margin-top: 15px;
 }
 
-/* .TodoActions{
-
-} */
+.TodoActions{
+position: relative;
+}
 .Todo--completed{
 	text-decoration: line-through;
 }
@@ -62,4 +66,34 @@ main{
 	background-color: lawngreen;
 	border: none;
 	border-radius: 50%;
+}
+.TodoActions--delete{
+	position: absolute;
+	top: -20px;
+	right: -13px;
+	color: black;
+	font-weight: 800;
+	font-size: large;
+	background: rgba(61, 65, 110, 0);
+	border: none;
+}
+button{
+	background: rgb(12 13 50 / 92%);
+	height: 30px;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 20px;
+	line-height: 25px;
+	margin: 0 5px;
+}
+.TodoActions--complete{
+	width: 90px;
+}
+.TodoActions--edit{
+	width: 40px;
+}
+
+.Todo input{
+	
 }
