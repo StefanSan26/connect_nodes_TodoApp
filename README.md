@@ -14,3 +14,10 @@
 - Delete Todos
 - Edit Todos
 - Mark Todo as Completed
+
+
+## About Me
+
+- By profession I'm a civil engineer from Venezuela living in Colombia who loves coding, i think the best way to grow as developer is to make my own apps.
+- I love coding, learn, do exercise and watch movies sometimes.
+- In 5 years i see myself as a Senior Frontend or Fullstack Developer preferably in a Startup.
