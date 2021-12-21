@@ -2,7 +2,7 @@ import React from 'react';
 import AppContext from "../context/AppContext";
 
 
-const TodoActions = ({completeTodo,setOnEdit,id}) => {
+const TodoActions = ({completeTodo,completed,setOnEdit,id}) => {
 	const {deleteTodo, getData} = React.useContext(AppContext)
 
 	const removeTodo = async (id) =>{
@@ -13,7 +13,7 @@ const TodoActions = ({completeTodo,setOnEdit,id}) => {
 	return (
 		<div className="TodoActions">
 
-			<button className="TodoActions--complete" onClick={completeTodo}>
+			<button className={`TodoActions--complete ${completed && "TodoActions--complete__active"}`} onClick={completeTodo}>
 				Complete
 			</button>
 			<button className="TodoActions--delete" onClick={()=>removeTodo(id)}>

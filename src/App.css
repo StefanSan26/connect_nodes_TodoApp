@@ -6,6 +6,9 @@
 button{
 	cursor: pointer;
 }
+button:hover{
+	background-color: #282c34;
+}
 input{
 	font-size: large;
 	width: 80%;
@@ -66,6 +69,11 @@ position: relative;
 	background-color: lawngreen;
 	border: none;
 	border-radius: 50%;
+	/* transform: rotate(45); */
+	transition: 0.3s ease;
+}
+.NewTodo__active {
+  transform: rotate(135deg);
 }
 .TodoActions--delete{
 	position: absolute;
@@ -76,6 +84,9 @@ position: relative;
 	font-size: large;
 	background: rgba(61, 65, 110, 0);
 	border: none;
+}
+.TodoActions--delete:hover{
+	color: darkred;
 }
 button{
 	background: rgb(12 13 50 / 92%);
@@ -89,7 +100,12 @@ button{
 }
 .TodoActions--complete{
 	width: 90px;
+
 }
+.TodoActions--complete__active{
+	background-color: #282c34;
+}
+
 .TodoActions--edit{
 	width: 40px;
 }

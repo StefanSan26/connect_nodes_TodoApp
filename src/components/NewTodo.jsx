@@ -20,7 +20,7 @@ const NewTodo = () => {
 	}
 	return (
 		<>
-		<button className='NewTodo' type='button' onClick={()=>setNewTodo(!newTodo)}>
+		<button className={`NewTodo ${newTodo && "NewTodo__active"}`} type='button' onClick={()=>setNewTodo(!newTodo)}>
 			+
 		</button>
 		{newTodo && 

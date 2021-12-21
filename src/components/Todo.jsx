@@ -33,6 +33,7 @@ const Todo = ({todo}) => {
 				<TodoActions 
 				setOnEdit={setOnEdit}
 				completeTodo={completeTodo}
+				completed={completed}
 				id={todo._id}
 				/>
 			</li>
